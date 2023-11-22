@@ -1,12 +1,10 @@
 //your JS code here. If required.
 document.addEventListener('DOMContentLoaded', () => {
-	const body = document.querySelector("body");
-	if(body.hasChildNodes()){
-		body.innerHTML = '';
+	const bodyContent = document.querySelector("body");
+	if(bodyContent.hasChildNodes()){
+		bodyContent.innerHTML = '';
 	}
 
-	const element = document.createElements("p");
-	element.textContent = "DOM load success";
-
-	body.appendChild(element);
+    const element = document.createTextNode("DOM load success");
+	bodyContent.appendChild(element);
 });
