@@ -1,6 +1,6 @@
 //your JS code here. If required.
 window.addEventListener('DOMContentLoaded', () => {
-	const bodyChild = document.body.children;
+	const bodyChildren = document.body.children;
 	if(bodyChildren.lenght > 0){
 		while(bodyChildren.length >0){
 			document.body.removeChild(bodyChildren[0]);
